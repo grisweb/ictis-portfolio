@@ -1,0 +1,12 @@
+.slider-news {
+  display: flex;
+  align-items: center;
+}
+
+.slider-news__slide {
+  display: none;
+}
+
+.slider-news__slide--active {
+  display: block;
+}
