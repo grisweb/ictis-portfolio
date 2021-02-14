@@ -1,0 +1,54 @@
+.slide-button {
+  background: none;
+  box-sizing: content-box;
+  cursor: pointer;
+  border: none;
+  padding: 0;
+  width: 60px;
+
+  &:active, &:focus{
+    outline: none;
+  }
+
+  svg {
+    width: 36px;
+    height: 36px;
+
+    path {
+      stroke: rgba(255, 255, 255, 0.2);
+    }
+  }
+
+  &:hover {
+    svg path {
+      animation-name: aiming;
+      animation-duration: .4s;
+      stroke: rgba(255, 255, 255, 1);
+    }
+  }
+}
+
+@keyframes aiming {
+  from{
+    stroke: rgba(255, 255, 255, 0.2);
+  }
+  to {
+    stroke: rgba(255, 255, 255, 1);
+  }
+}
+
+.slide-button--prev {
+  left: 0;
+
+  svg {
+    transform: rotate(90deg);
+  }
+}
+
+.slide-button--next {
+  right: 0;
+
+  svg {
+    transform: rotate(-90deg);
+  }
+}

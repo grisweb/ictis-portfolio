@@ -143,10 +143,6 @@
     display: none;
   }
 
-  .page-header__site-nav--mobile {
-    display: flex;
-  }
-
   .page-header__nav-list {
     flex-direction: column;
     width: 100%;
@@ -170,5 +166,11 @@
   .page-header__log-in {
     width: auto;
     margin-left: 0;
+  }
+}
+
+@media (min-width: 561px) {
+  .page-header__site-nav {
+    display: flex !important;
   }
 }
