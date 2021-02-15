@@ -1,10 +1,14 @@
 .slide-button {
+  position: absolute;
+  width: 60px;
+  height: 100%;
+  top: 0;
   background: none;
   box-sizing: content-box;
   cursor: pointer;
   border: none;
   padding: 0;
-  width: 60px;
+  z-index: 1;
 
   &:active, &:focus{
     outline: none;
@@ -50,5 +54,22 @@
 
   svg {
     transform: rotate(-90deg);
+  }
+}
+
+@media (max-width: 900px) {
+  .slide-button {
+    width: 45px;
+  }
+}
+
+@media (max-width: 560px) {
+  .slide-button {
+    width: 32px;
+
+    svg {
+      width: 28px;
+      height: 28px;
+    }
   }
 }
