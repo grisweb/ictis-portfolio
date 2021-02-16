@@ -44,7 +44,7 @@
 }
 
 .page-header__link {
-  padding: 20px;
+  padding: 20px 25px;
   text-decoration: none;
   font-weight: 500;
   color: white;
@@ -331,6 +331,36 @@
     padding: 30px 40px;
   }
 }
+.slider-mentors {
+  position: relative;
+}
+
+.slider-mentors__slide-wrapper {
+  display: flex;
+  justify-content: center;
+}
+.slider-mentors__slide-wrapper:focus {
+  outline: none;
+}
+
+.slider-mentors__slide:focus {
+  outline: none;
+}
+
+.slider-mentors__image-wrapper {
+  position: relative;
+  width: 240px;
+  box-sizing: border-box;
+}
+
+.slider-mentors__image {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 133.334%;
+}
+
 /* Слайдер */
 /* Слайдер запущен */
 /* Слайдер с точками */
@@ -362,6 +392,20 @@ body {
   font-family: "Roboto", "Times New Roman", sans-serif;
   min-width: 320px;
   background-color: aqua;
+}
+
+.page-main section {
+  background-color: white;
+}
+
+section {
+  padding: 0 25px;
+}
+
+.section-name {
+  margin: 0;
+  padding: 30px 0;
+  font-size: 36px;
 }
 
 .container {

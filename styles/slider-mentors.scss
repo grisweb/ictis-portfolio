@@ -1,0 +1,32 @@
+.slider-mentors {
+  position: relative;
+}
+
+.slider-mentors__slide-wrapper {
+  display: flex;
+  justify-content: center;
+
+  &:focus {
+    outline: none;
+  }
+}
+
+.slider-mentors__slide {
+  &:focus {
+    outline: none;
+  }
+}
+
+.slider-mentors__image-wrapper {
+  position: relative;
+  width: 240px;
+  box-sizing: border-box;
+}
+
+.slider-mentors__image {
+  background-size: cover;
+  background-position: center center;
+  background-repeat: no-repeat;
+  width: 100%;
+  padding-top: 133.334%;
+}
