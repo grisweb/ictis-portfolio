@@ -1,46 +1,7 @@
 @import "fonts";
+@import "standarts";
 @import "page-header";
 @import "slide-button";
 @import "slider";
 @import "slider-mentors";
 @import "slick";
-
-body {
-  margin: 0;
-  padding: 0;
-  font-family: "Roboto", "Times New Roman", sans-serif;
-  min-width: 320px;
-  background-color: aqua;
-}
-
-.page-main section {
-  background-color: white;
-}
-
-section {
-  padding: 0 25px;
-}
-
-.section-name {
-  margin: 0;
-  padding: 30px 0;
-  font-size: 36px;
-}
-
-.container {
-  padding: 0 10%;
-  margin: 0 auto;
-  max-width: 1200px;
-}
-
-@media (max-width: 900px) {
-  .container {
-    padding: 0 5%;
-  }
-}
-
-@media (max-width: 560px) {
-  .container {
-    padding: 0;
-  }
-}

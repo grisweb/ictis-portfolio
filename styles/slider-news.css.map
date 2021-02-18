@@ -1,1 +1,1 @@
-{"version":3,"sourceRoot":"","sources":[],"names":[],"mappings":"","file":"slider-news.css"}
+{"version":3,"sourceRoot":"","sources":["slider-news.scss"],"names":[],"mappings":"AAAA;EACE;;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;;;AAGF;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;;AAGF;EACE;IACE;;EAEF;IACE;;;AAIJ;EACE;EACA;EACA;EACA;EACA;EACA;EACA;EACA;;AAEA;EACE;EACA;EACA;EACA;EACA;EACA;EACA;;;AAIJ;EACE;EACA;;;AAGF;EACE;EACA;EACA;EACA;;;AAGF;EACE;IACE;;;AAIJ;EACE;IACE","file":"slider-news.css"}
