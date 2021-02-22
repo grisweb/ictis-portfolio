@@ -505,14 +505,11 @@ body {
 .rating {
   display: flex;
   align-items: flex-end;
-  font-size: 40px;
-  line-height: 0.75;
 }
 
 .rating__body {
   font-family: UnioWeb_font-icons;
   font-size: 24px;
-  line-height: 1;
   color: #c4c4c4;
   position: relative;
 }
@@ -536,6 +533,12 @@ body {
   top: 0;
   left: 0;
   color: #ffc800;
+}
+
+.rating__num-reviews {
+  margin-left: 8px;
+  font-size: 16px;
+  line-height: 24px;
 }
 
 .project-block {
@@ -579,7 +582,13 @@ body {
 
 .project-block__type-project {
   flex-grow: 1;
-  margin: 20px 0;
+  margin: 40px 0 20px;
+}
+
+.project-block__bottom-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
 .type-project__title {
@@ -599,6 +608,19 @@ body {
   border: 1px solid white;
   padding: 8px;
   margin-right: 10px;
+  margin-bottom: 12px;
+}
+
+.button {
+  display: block;
+  box-sizing: content-box;
+  background-color: #42622D;
+  line-height: 1;
+  text-decoration: none;
+  color: inherit;
+  padding: 10px 60px;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .best-projects__list {

@@ -39,5 +39,11 @@
 
 .project-block__type-project {
   flex-grow: 1;
-  margin: 20px 0;
+  margin: 40px 0 20px;
+}
+
+.project-block__bottom-elements {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
