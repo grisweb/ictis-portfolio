@@ -17,6 +17,13 @@
   font-style: normal;
   font-weight: 600;
 }
+@font-face {
+  font-family: "UnioWeb_font-icons";
+  src: url("../fonts/UnioWeb_font-icons.ttf") format("truetype");
+  font-weight: normal;
+  font-style: normal;
+  font-display: block;
+}
 body {
   margin: 0;
   padding: 0;
@@ -27,12 +34,12 @@ body {
 
 .page-main__section {
   background-color: white;
-  padding: 0 25px;
+  padding: 50px 25px;
 }
 
 .section-name {
   margin: 0;
-  padding: 30px 0;
+  padding-bottom: 30px;
   font-size: 36px;
 }
 
@@ -45,6 +52,14 @@ body {
 @media (max-width: 900px) {
   .container {
     padding: 0 5%;
+  }
+
+  .page-main__section {
+    padding: 50px 18px;
+  }
+
+  .section-name {
+    font-size: 28px;
   }
 }
 @media (max-width: 560px) {
@@ -236,22 +251,50 @@ body {
   height: 36px;
 }
 .slide-button svg path {
-  stroke: rgba(255, 255, 255, 0.2);
+  stroke: white;
+  opacity: 0.2;
 }
 .slide-button:hover svg path {
   animation-name: aiming;
   animation-duration: 0.4s;
-  stroke: white;
+  opacity: 1;
+}
+
+.slide-button--gray svg path {
+  stroke: gray;
+  opacity: 0.7;
+}
+.slide-button--gray:hover svg path {
+  animation-name: aiming--gray;
 }
 
 @keyframes aiming {
   from {
-    stroke: rgba(255, 255, 255, 0.2);
+    opacity: 0.4;
   }
   to {
-    stroke: white;
+    opacity: 1;
   }
 }
+@keyframes aiming--gray {
+  from {
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+.slide-button--gray.slick-disabled svg path {
+  opacity: 0.3;
+}
+.slide-button--gray.slick-disabled:hover {
+  cursor: revert;
+}
+.slide-button--gray.slick-disabled:hover svg path {
+  opacity: 0.3;
+  animation-name: none;
+}
+
 .slide-button--prev {
   left: 0;
 }
@@ -280,9 +323,19 @@ body {
     height: 28px;
   }
 }
+@media (max-width: 400px) {
+  .slide-button--prev.slide-button--gray {
+    left: -15px;
+  }
+
+  .slide-button--next.slide-button--gray {
+    right: -15px;
+  }
+}
 .slider-news {
   padding: 0 0;
   position: relative;
+  opacity: 0;
 }
 
 .slider-news__slide {
@@ -369,6 +422,8 @@ body {
 }
 .slider-mentors {
   position: relative;
+  padding: 0 60px;
+  opacity: 0;
 }
 
 .slider-mentors__slide-wrapper {
@@ -379,8 +434,14 @@ body {
   outline: none;
 }
 
+.slider-mentors__slide {
+  text-decoration: none;
+}
 .slider-mentors__slide:focus {
   outline: none;
+}
+.slider-mentors__slide:hover {
+  text-decoration: underline black;
 }
 
 .slider-mentors__image-wrapper {
@@ -395,10 +456,29 @@ body {
   background-repeat: no-repeat;
   width: 100%;
   padding-top: 133.334%;
+  border-radius: 5px;
 }
 
+.slider-mentors__name {
+  padding-top: 30px;
+  margin: 0;
+  text-align: center;
+  color: black;
+  font-weight: 600;
+  font-size: 18px;
+}
+
+@media (max-width: 400px) {
+  .slider-mentors {
+    padding: 0;
+  }
+}
 /* Слайдер */
 /* Слайдер запущен */
+.slick-slider.slick-initialized {
+  opacity: 1;
+}
+
 /* Слайдер с точками */
 /* Ограничивающая оболочка */
 .slick-list {
@@ -422,5 +502,109 @@ body {
 /* Точки (булиты) */
 /* Активная точка */
 /* Элемент точки */
+.rating {
+  display: flex;
+  align-items: flex-end;
+  font-size: 40px;
+  line-height: 0.75;
+}
+
+.rating__body {
+  font-family: UnioWeb_font-icons;
+  font-size: 24px;
+  line-height: 1;
+  color: #c4c4c4;
+  position: relative;
+}
+.rating__body::before {
+  content: "";
+  display: block;
+}
+
+.rating__active {
+  position: absolute;
+  height: 100%;
+  top: 0;
+  left: 0;
+  overflow: hidden;
+}
+.rating__active:before {
+  content: "";
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: #ffc800;
+}
+
+.project-block {
+  background-color: #2D4262;
+  color: white;
+  display: flex;
+  border-radius: 5px;
+}
+
+.project-block__image-wrapper {
+  margin: 10px;
+  height: 350px;
+}
+
+.project-block__image {
+  width: 280px;
+  height: 350px;
+}
+
+.project-block__content-wrapper {
+  margin: 10px;
+  max-height: 350px;
+  overflow: hidden;
+  display: flex;
+  flex-direction: column;
+}
+
+.project-block__name {
+  margin-top: 14px;
+  margin-bottom: 14px;
+  font-size: 24px;
+}
+
+.project-block__description {
+  font-size: 18px;
+  line-height: 28px;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+}
+
+.project-block__type-project {
+  flex-grow: 1;
+  margin: 20px 0;
+}
+
+.type-project__title {
+  font-weight: 500;
+  font-size: 18px;
+  margin: 0;
+}
+
+.type-project__wrapper {
+  margin-top: 10px;
+}
+
+.type-project__item {
+  display: inline-block;
+  text-decoration: none;
+  color: inherit;
+  border: 1px solid white;
+  padding: 8px;
+  margin-right: 10px;
+}
+
+.best-projects__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
 
 /*# sourceMappingURL=style.css.map */

@@ -1,7 +1,9 @@
 /* Слайдер */
 .slick-slider {}
 /* Слайдер запущен */
-.slick-slider.slick-initialized{}
+.slick-slider.slick-initialized{
+  opacity: 1;
+}
 /* Слайдер с точками */
 .slick-slider.slick-dotted{}
 /* Ограничивающая оболочка */
@@ -29,7 +31,9 @@
 /* Стрелка вправо */
 .slick-arrow.slick-next{}
 /* Стрелка не активная */
-.slick-arrow.slick-disabled{}
+.slick-arrow.slick-disabled{
+
+}
 /* Точки (булиты) */
 .slick-dots{}
 .slick-dots li{}

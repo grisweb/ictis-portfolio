@@ -2,6 +2,15 @@
 @import "standarts";
 @import "page-header";
 @import "slide-button";
-@import "slider";
+@import "slider-news";
 @import "slider-mentors";
 @import "slick";
+@import "rating";
+@import "project-block";
+@import "type-project";
+
+.best-projects__list {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}

@@ -19,7 +19,8 @@
     height: 36px;
 
     path {
-      stroke: rgba(255, 255, 255, 0.2);
+      stroke: white;
+      opacity: 0.2;
     }
   }
 
@@ -27,17 +28,52 @@
     svg path {
       animation-name: aiming;
       animation-duration: .4s;
-      stroke: rgba(255, 255, 255, 1);
+      opacity: 1;
+    }
+  }
+}
+
+.slide-button--gray {
+  svg path {
+    stroke: gray;
+    opacity: 0.7;
+  }
+
+  &:hover {
+    svg path {
+      animation-name: aiming--gray;
     }
   }
 }
 
 @keyframes aiming {
   from{
-    stroke: rgba(255, 255, 255, 0.2);
+    opacity: 0.4;
   }
   to {
-    stroke: rgba(255, 255, 255, 1);
+    opacity: 1;
+  }
+}
+
+@keyframes aiming--gray {
+  from{
+    opacity: 0.7;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+.slide-button--gray.slick-disabled {
+  svg path {
+    opacity: 0.3;
+  }
+  &:hover {
+    cursor: revert;
+    svg path {
+      opacity: 0.3;
+      animation-name: none;
+    }
   }
 }
 
@@ -71,5 +107,15 @@
       width: 28px;
       height: 28px;
     }
+  }
+}
+
+@media (max-width: 400px) {
+  .slide-button--prev.slide-button--gray {
+    left: -15px;
+  }
+
+  .slide-button--next.slide-button--gray {
+    right: -15px;
   }
 }
