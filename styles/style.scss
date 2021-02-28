@@ -1,5 +1,5 @@
 @import "fonts";
-@import "standarts";
+@import "standards";
 @import "page-header";
 @import "slide-button";
 @import "slider-news";
@@ -9,9 +9,38 @@
 @import "project-block";
 @import "type-project";
 @import "button";
+@import "best-projects";
+@import "page-footer";
+@import "sidebar";
+@import "check";
+@import "projects-list";
+@import "nice-select";
+@import "project-block--small";
 
-.best-projects__list {
-  list-style: none;
-  padding: 0;
-  margin: 0;
+.projects-wrapper {
+  display: flex;
+}
+
+.projects-wrapper__sidebar {
+  flex: 0 0 25%;
+  max-width: 25%;
+  padding-right: 15px;
+  box-sizing: border-box;
+}
+
+.projects-wrapper__projects-list {
+  flex: 0 0 75%;
+  max-width: 75%;
+  padding-left: 15px;
+  box-sizing: border-box;
+}
+
+@media (max-width: 1200px) {
+  .projects-wrapper__sidebar {
+    padding-right: 10px;
+  }
+
+  .projects-wrapper__projects-list {
+    padding-left: 10px;
+  }
 }
