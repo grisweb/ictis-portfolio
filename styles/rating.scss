@@ -1,11 +1,11 @@
 .rating {
   display: flex;
-  align-items: flex-end;
+  align-items: center;
+  line-height: 1;
 }
 
 .rating__body {
   font-family: UnioWeb_font-icons;
-  font-size: 24px;
   color: #c4c4c4;
   position: relative;
 
@@ -35,28 +35,6 @@
 
 .rating__num-reviews {
   margin-left: 8px;
-  font-size: 16px;
-  line-height: 24px;
-}
-
-@media (max-width: 1200px) {
-  .rating__body {
-    font-size: 20px;
-  }
-
-  .rating__num-reviews {
-    font-size: 14px;
-    line-height: 20px;
-  }
-}
-
-@media (max-width: 1000px) {
-  .rating__body {
-    font-size: 18px;
-  }
-
-  .rating__num-reviews {
-    font-size: 14px;
-    line-height: 16px;
-  }
+  line-height: 1;
+  padding-top: 4px;
 }

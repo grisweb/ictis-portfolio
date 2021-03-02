@@ -89,13 +89,13 @@
         <section class="page-main__section">
             <h2 class="section-name">Лучшие проекты</h2>
             <ul class="best-projects__list">
-                <li class="best-projects__item project-block project-block--projects">
+                <li class="best-projects__item project-block project-block--best-projects">
                     <?php include("../source/blocks/project-block.php") ?>
                 </li>
-                <li class="best-projects__item project-block project-block--projects">
+                <li class="best-projects__item project-block project-block--best-projects">
                     <?php include("../source/blocks/project-block.php") ?>
                 </li>
-                <li class="best-projects__item project-block project-block--projects">
+                <li class="best-projects__item project-block project-block--best-projects">
                     <?php include("../source/blocks/project-block.php") ?>
                 </li>
             </ul>

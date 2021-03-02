@@ -4,7 +4,6 @@
 }
 
 .sidebar__header {
-  border-bottom: 1px solid #DDDDDD;
   padding: 20px 0 19px;
   display: flex;
   justify-content: space-between;
@@ -30,22 +29,25 @@
   user-select: none;
   -webkit-user-select: none;
 
-  svg {
+  span {
+    display: block;
     transform: rotate(90deg);
     transition: all 0.15s ease-in-out;
   }
 
   &--active {
-    svg {
+    span {
       transform: rotate(0deg);
     }
   }
 }
 
 .sidebar__list {
+  display: block;
   margin: 0;
   padding: 25px 0;
   list-style: none;
+  border-top: 1px solid #DDDDDD;
 }
 
 .sidebar__item {
@@ -58,7 +60,17 @@
   }
 }
 
+@media (min-width: 1001px) {
+  .sidebar__list {
+    display: block !important;
+  }
+}
+
 @media (max-width: 1000px) {
+  .sidebar__header {
+    border: none;
+  }
+
   .sidebar__list {
     display: none;
   }

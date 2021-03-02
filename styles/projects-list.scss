@@ -55,10 +55,26 @@
   list-style: none;
   padding: 0;
   margin: 20px 0 0;
+
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
 }
 
 .projects-list__item {
   margin-bottom: 20px;
+}
+
+@media (max-width: 540px) {
+  .projects-list__list {
+    justify-content: center;
+  }
+}
+
+@media (max-width: 500px) {
+  .projects-list__view {
+    display: none;
+  }
 }
 
 
