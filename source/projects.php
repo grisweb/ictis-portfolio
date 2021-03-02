@@ -52,7 +52,14 @@
             <div class="projects-wrapper">
                 <div class="projects-wrapper__sidebar">
                     <div class="sidebar">
-                        <h3 class="sidebar__title">Категория</h3>
+                        <header class="sidebar__header">
+                            <h3 class="sidebar__title">Категория</h3>
+                            <button class="sidebar__toggle">
+                                <svg width="16" height="9" viewBox="0 0 10 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                    <path d="M1 1L5 5L9 1" stroke="gray" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            </button>
+                        </header>
                         <ul class="sidebar__list">
                             <li class="sidebar__item">
                                 <label class="sidebar__check check">
@@ -131,7 +138,7 @@
                             </div>
                         </div>
                         <ul class="projects-list__list">
-                            <li class="projects-list__item project-block project-block">
+                            <li class="projects-list__item project-block project-block--projects">
                                 <?php include ('../source/blocks/project-block.php')?>
                             </li>
                         </ul>

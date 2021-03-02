@@ -92,6 +92,12 @@
                 <li class="best-projects__item project-block project-block--projects">
                     <?php include("../source/blocks/project-block.php") ?>
                 </li>
+                <li class="best-projects__item project-block project-block--projects">
+                    <?php include("../source/blocks/project-block.php") ?>
+                </li>
+                <li class="best-projects__item project-block project-block--projects">
+                    <?php include("../source/blocks/project-block.php") ?>
+                </li>
             </ul>
         </section>
     </div>
