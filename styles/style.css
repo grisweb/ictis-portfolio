@@ -875,14 +875,31 @@ body {
 
 .sidebar__toggle {
   display: none;
+  animation-name: rotating;
+  animation-duration: 0.1s;
+  animation-direction: reverse;
   transform: rotate(90deg);
   background: none;
   outline: none;
   border: 2px solid gray;
   border-radius: 100%;
-  padding: 5px;
+  width: 30px;
+  height: 30px;
+}
+.sidebar__toggle--active {
+  animation-name: rotating;
+  animation-duration: 0.1s;
+  transform: rotate(0deg);
 }
 
+@keyframes rotating {
+  0% {
+    transform: rotate(90deg);
+  }
+  100% {
+    transform: rotate(0deg);
+  }
+}
 .sidebar__list {
   margin: 0;
   padding: 25px 0;
